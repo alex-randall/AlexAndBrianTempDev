@@ -1,0 +1,2 @@
+NOTE: This file can be deleted when there is at least one file in this directory or sub directory.
+It is here just so the directory structure is initially preserved in github.
