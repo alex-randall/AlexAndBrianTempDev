@@ -1,2 +1,2 @@
-# SPRedirectBannerTempDev
-Temporary dev location for the SPRedirectBanner
+# AlexAndBrianTempDev
+Alex and Brian temporary GitHub dev location
