@@ -1,4 +1,4 @@
-﻿# SPRedirectBanner-OnPrem-SiteCollectionUninstall.ps1 1.0.0
+﻿# SPRedirectBanner-Traditional-SiteCollectionUninstall.ps1 1.0.0
 #
 # A PowerShell script that uninstalls the SharePoint 2010 (or higher) 
 # SPRedirectBanner customization from an existing site collection 
@@ -37,9 +37,9 @@ $webUrls = $webUrlSortedList.Keys;
 # loop through each web url (alphabetically)
 foreach ($webUrl in $webUrls)
 {
-    # execute the SPRedirectBanner-OnPrem-SubSiteUninstall.ps1 PowerShell script
+    # execute the SPRedirectBanner-Traditional-SubSiteUninstall.ps1 PowerShell script
     # to perform the uninstall logic at the web level 
-    & .\SPRedirectBanner-OnPrem-SubSiteUninstall.ps1 $webUrl $true;
+    & .\SPRedirectBanner-Traditional-SubSiteUninstall.ps1 $webUrl $true;
 }
 
 # write footer

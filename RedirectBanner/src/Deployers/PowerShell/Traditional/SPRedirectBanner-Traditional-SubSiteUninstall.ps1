@@ -1,4 +1,4 @@
-﻿# SPRedirectBanner-OnPrem-SiteCollectionUninstall.ps1 1.0.0
+﻿# SPRedirectBanner-Traditional-SubSiteUninstall.ps1 1.0.0
 #
 # A PowerShell script that uninstalls the SharePoint 2010 (or higher) 
 # SPRedirectBanner customization from an existing single root site, sub 

@@ -1,4 +1,4 @@
-﻿# SPRedirectBanner-OnPrem-SiteCollectionApply.ps1 1.0.0
+﻿# SPRedirectBanner-Traditional-SiteCollectionApply.ps1 1.0.0
 #
 # A PowerShell script that (re)applies the SharePoint 2010 (or higher) 
 # SPRedirectBanner customization to an existing site collection. 
@@ -41,7 +41,7 @@ $siteCollectionUrlMinusLastSlash = $site.Url.TrimEnd('/');
 # get the length of the site collection url minus the last slash
 $siteCollectionUrlMinusLastSlashLength = $siteCollectionUrlMinusLastSlash.Length;
 
-# construct the new site collection url minutes the last slash (if present) 
+# construct the new site collection url minus the last slash (if present) 
 $newSiteCollectionUrlMinusLastSlash = $newSiteCollectionUrl.TrimEnd('/');
 
 # loop through each web url (alphabetically)
@@ -50,9 +50,9 @@ foreach ($webUrl in $webUrls)
     # construct the new web url (autocalculated based off new site collection url)
     $newWebUrl = $newSiteCollectionUrlMinusLastSlash + $webUrl.Remove(0, $siteCollectionUrlMinusLastSlashLength);
 
-    # execute the SPRedirectBanner-OnPrem-SubSiteApply.ps1 PowerShell script
+    # execute the SPRedirectBanner-Traditional-SubSiteApply.ps1 PowerShell script
     # to perform the apply logic at the web level 
-    & .\SPRedirectBanner-OnPrem-SubSiteApply.ps1 $webUrl $newWebUrl $true;
+    & .\SPRedirectBanner-Traditional-SubSiteApply.ps1 $webUrl $newWebUrl $true;
 }
 
 # write footer

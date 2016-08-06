@@ -43,19 +43,31 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="build\build.js" />
+    <Content Include="build\buildHeaderAndFooterAroundRedirectBannerMinJs.js" />
+    <Content Include="build\buildMinifyJsRedirectBanner.js" />
+    <Content Include="build\buildPowerShellTaskTraditionalSiteCollectionApply.js" />
+    <Content Include="build\buildPowerShellTaskTraditionalSiteCollectionUninstall.js" />
+    <Content Include="build\buildPowerShellTaskTraditionalSubSiteApply.js" />
+    <Content Include="build\buildPowerShellTaskTraditionalSubSiteUninstall.js" />
+    <Content Include="build\buildTsRedirectBanner.js" />
+    <Content Include="build\common\createBuildMinifyJsTask.js" />
+    <Content Include="build\common\createBuildPowerShellTask.js" />
+    <Content Include="build\common\createBuildTsTask.js" />
+    <Content Include="build\common\replaceVersionNumberInTopOfPowerShellFile.js" />
+    <Content Include="build\default.js" />
     <Content Include="gulpfile.js" />
     <Content Include="_ORIGINAL\zSPRedirectBanner.js" />
     <Content Include="_ORIGINAL\zSPRedirectBanner.min.js" />
   </ItemGroup>
   <ItemGroup>
     <None Include="package.json" />
+    <None Include="tsconfig.json" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="src\RedirectBanner.ts" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="build\common\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
