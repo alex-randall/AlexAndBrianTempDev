@@ -1,8 +1,23 @@
-﻿{
-	"version": "1.0.0",
-	"name": "RedirectBanner",
-	"private": true,
-	"devDependencies": {
-		"gulp": "^3.9.1"
-	}
+{
+  "name": "redirectbanner",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-header": "^1.8.7",
+    "gulp-if": "^2.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.5.4",
+    "gulp-typescript": "^2.13.6",
+    "gulp-uglify": "^2.0.0",
+    "run-sequence": "^1.2.2",
+    "typescript": "^1.8.10",
+    "uglify-js": "^2.7.0"
+  }
 }
