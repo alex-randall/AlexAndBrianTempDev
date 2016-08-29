@@ -1,14 +1,14 @@
 # Core.RedirectBanner #
 
 ### Summary ###
-Core.RedirectBanner is a SharePoint customization 
+**Core.RedirectBanner** is a SharePoint customization 
 that places a developer configurable red message at the top of every page of a specific site collection/root site/sub site telling the end user that 
 the site has moved and they need to upgrade their favorites/bookmarks with the new url (which they can click on to go to the new site).  
-This is useful for the following scenarios:
+### Useful in the following scenarios ###
 - SharePoint upgrades/migrations
 - SharePoint site moves/renames
 
-Additional features:
+### Additional features ###
 - auto redirects to the new url after 30 seconds (configurable) if the user doesn’t do anything.
 - can be deployed at both:
   - site collection level (deployed to all current sub sites including root site)
@@ -23,7 +23,7 @@ Additional features:
 -  SharePoint 2010
 
 ### Prerequisites ###
-Just  appropriate permission to install.
+Just appropriate SharePoint permission to install.
 
 ### Solution ###
 Solution | Author(s)
